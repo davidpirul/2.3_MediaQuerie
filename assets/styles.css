@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    text-align: center;
+    grid-area: header;
+
+       
+}
+
+menu {
+    display: grid;
+    grid-area: menu;
+    padding: 0;
+    background-color: #A5A692;
+    margin-block: 0;
+   
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 2vw;
+}
+
+main{
+    grid-area: main;
+
+}
+
+footer {
+    text-align: center;
+    grid-area: footer;
+    background-color: #A5A692;
+    color: #011F26;
+    
+
+}
+
+.list {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #A5A692;
+    color: #011F26;
+      
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: #A5A692;
+    color: #011F26;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #011F26;
+    color: #F2A71B;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.grid-container {
+    display: grid;
+    width: auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "main"
+    "footer";
+}
+
+
+
+.grid-products {
+    display: grid;
+    column-gap: 1vw;
+    row-gap: 1vh;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    height: 94vh;
+}
+
+.grid-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.grid-item img {
+    width: 100%;
+}
+  
+.price {
+    color: #F2C094;
+    font-size: 100%;
+    
+}
+
+h1 {
+    font-size: 2vw;
+    margin: 0;
+}
+
+h5 {
+    font-size: 1vw;
+    margin: 3vh;
+}
+
+p {
+    width: 100%;
+    margin: 3px;
+}
+
+  
+.grid-item button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    background-color: #011F26;
+    color: #F2A71B;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 18px;
+}
+  
+.grid-item button:hover {
+    opacity: 0.7;
+}
+
+
+@media (min-width: 576px) {
+    .grid-container {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-areas:
+    "header menu menu"
+    "header main main"
+    "footer main main";   
+  
+
+    }
+
+    .list {
+        display: initial;
+        background-color: #011F26;
+        color: #F2A71B;
+        
+    }
+
+    a {
+        color: #F2A71B; 
+    }
+
+    .grid-products {
+        display: grid;
+        column-gap: 1vw;
+        row-gap: 1vh;
+        grid-template-columns: auto auto auto auto;
+       
+    }
+    
+    .menuhamburguesa {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 2vh;
+    
+    }
+
+    
+}
+
+/* Color Theme Swatches in Hex */
+.Green-on-Green---Porsche-991-Speedster-1-hex { color: #025E73; }
+.Green-on-Green---Porsche-991-Speedster-2-hex { color: #011F26; }
+.Green-on-Green---Porsche-991-Speedster-3-hex { color: #A5A692; }
+.Green-on-Green---Porsche-991-Speedster-4-hex { color: #BFB78F; }
+.Green-on-Green---Porsche-991-Speedster-5-hex { color: #F2A71B; }
